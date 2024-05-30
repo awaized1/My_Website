@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #86A8E7, #CFD7E5);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h1 {
+    color: #051937;
+    display: flex;
+    margin-bottom: 20px;
+    font-family: "Caveat", cursive;
+    text-align: center;
+}
+
+.addTasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #86A8E7;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:hover{
+    background: #7894C9;
+}
+
+ul li {
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    color: #051937;
+    font-family: "Caveat", cursive;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+ul li.checked{
+    color: #9AA0AC;
+    text-decoration: line-through;
+}
+
+ul li span{
+    border-radius: 20px;
+    color: #86A8E7;
+    position: absolute;
+    text-align: center;
+    right: 50px;
+}
+
+ul li span:hover{
+    border-radius: 50px;
+    color: #051937;
+}
